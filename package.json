@@ -1,0 +1,45 @@
+{
+  "name": "my-ionic-app",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@ionic/react": "0.0.5",
+    "@types/googlemaps": "^3.30.16",
+    "@types/jest": "23.3.9",
+    "@types/node": "10.12.9",
+    "@types/react": "16.7.6",
+    "@types/react-dom": "16.0.9",
+    "@types/react-redux": "^6.0.9",
+    "@types/react-router": "^4.4.3",
+    "@types/react-router-dom": "^4.3.1",
+    "@types/webpack-env": "1.13.7",
+    "date-fns": "^1.29.0",
+    "react": "^16.7.0",
+    "react-app-rewire-hot-loader": "2.0.1",
+    "react-app-rewired": "2.1.0",
+    "react-dom": "^16.7.0",
+    "react-hot-loader": "4.7.1",
+    "react-redux": "^5.1.1",
+    "react-router": "^4.3.1",
+    "react-router-dom": "^4.3.1",
+    "react-scripts": "2.1.1",
+    "redux": "^4.0.1",
+    "typesafe-actions": "^2.0.4",
+    "typescript": "3.1.6"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": [
+    ">0.2%",
+    "not dead",
+    "not ie <= 11",
+    "not op_mini all"
+  ]
+}
