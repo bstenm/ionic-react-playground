@@ -19,6 +19,8 @@
 */
 
 :root {
+  --ion-background-color: #F5F5F5;
+
   --ion-color-angular: #ac282b;
   --ion-color-communication: #8e8d93;
   --ion-color-tooling: #fe4c52;

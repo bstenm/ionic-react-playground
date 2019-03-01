@@ -1,16 +1,16 @@
+import { IonIcon, IonLabel, IonPage, IonRouterOutlet, IonTabBar, IonTabButton, IonTabs } from '@ionic/react';
 import React from 'react';
+import { Redirect, Route } from 'react-router';
+import About from './Home';
+import MapView from './Map';
 import SchedulePage from './SchedulePage';
 import SessionDetail from './SessionDetail';
-import SpeakerList from './SpeakerList';
 import SpeakerDetail from './SpeakerDetail';
-import MapView from './Map';
-import About from './About';
-import { IonTabs, IonTabButton, IonIcon, IonLabel, IonRouterOutlet, IonTabBar, IonPage } from '@ionic/react';
-import { Route, Redirect } from 'react-router';
+import SpeakerList from './SpeakerList';
 
 const AppStack: React.SFC = () => (
   <IonPage>
-    <Route exact path="/" render={() => <Redirect to="/schedule"/>}/>
+    <Route exact path="/" render={() => <Redirect to="/home"/>}/>
     {
     /**
      * Only render exact matches.  Only destroy on back button click
@@ -28,7 +28,7 @@ const AppStack: React.SFC = () => (
         <Route path="/:tab(speakers)/speaker/:id" component={SpeakerDetail} />
         <Route path="/:tab(schedule|speakers)/sessions/:id" component={SessionDetail} />
         <Route path="/:tab(map)" component={MapView} />
-        <Route path="/:tab(about)" component={About} />
+        <Route path="/:tab(home)" component={About} />
       </IonRouterOutlet>
       <IonTabBar slot="bottom">
         <IonTabButton tab="schedule" href="/schedule">
@@ -43,9 +43,9 @@ const AppStack: React.SFC = () => (
           <IonIcon name="map" />
           <IonLabel>Map</IonLabel>
         </IonTabButton>
-        <IonTabButton tab="about" href="/about">
-          <IonIcon name="information-circle" />
-          <IonLabel>About</IonLabel>
+        <IonTabButton tab="home" href="/Home">
+          <IonIcon name="home" />
+          <IonLabel>Home</IonLabel>
         </IonTabButton>
       </IonTabBar>
     </IonTabs>
