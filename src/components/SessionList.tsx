@@ -1,8 +1,8 @@
+import { IonItemDivider, IonItemGroup, IonLabel, IonList, IonListHeader } from '@ionic/react';
+import { format, parse as parseDate } from 'date-fns';
 import React from 'react';
 import { Session, SessionGroup } from '../store/sessions/types';
-import { format, parse as parseDate } from 'date-fns';
 import SessionListItem from './SessionListItem';
-import { IonList, IonListHeader, IonItemGroup, IonItemDivider, IonLabel } from '@ionic/react';
 
 interface Props {
   sessions: Session[]

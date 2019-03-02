@@ -1,11 +1,11 @@
+import { IonAvatar, IonButton, IonButtons, IonCard, IonCardContent, IonCardHeader, IonCol, IonContent, IonGrid, IonHeader, IonIcon, IonItem, IonList, IonMenuButton, IonRow, IonTitle, IonToolbar } from '@ionic/react';
+import { History } from 'history';
 import React from 'react';
 import { connect } from 'react-redux';
-import { RouteComponentProps, withRouter } from 'react-router';
+import { RouteComponentProps } from 'react-router';
 import { RootState } from '../store';
-import { History } from 'history';
-import { IonIcon, IonMenuButton, IonCard, IonCardHeader, IonCardContent, IonItem, IonAvatar, IonList, IonGrid, IonCol, IonRow, IonButton, IonHeader, IonContent, IonToolbar, IonButtons, IonTitle } from '@ionic/react';
-import { Speaker } from '../store/speakers/types';
 import { Session } from '../store/sessions/types';
+import { Speaker } from '../store/speakers/types';
 
 
 interface ItemProps {
