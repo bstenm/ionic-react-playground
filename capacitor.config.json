@@ -1,0 +1,6 @@
+{
+  "appId": "io.react.ionic",
+  "appName": "react-ionic",
+  "bundledWebRuntime": false,
+  "webDir": "www"
+}
