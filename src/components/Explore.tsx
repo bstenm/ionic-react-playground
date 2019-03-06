@@ -1,8 +1,21 @@
-import { IonContent, IonIcon, IonItem, IonLabel, IonList } from '@ionic/react';
+import { IonButton, IonButtons, IonContent, IonIcon, IonItem, IonLabel, IonList } from '@ionic/react';
 import React from 'react';
+import TopBar from './TopBar';
+
+const topBarButtons = (
+      <IonButtons>
+            <IonButton>
+                  <IonIcon name="add-circle"/>
+            </IonButton>
+            <IonButton>
+                  <IonIcon name="search"/>
+            </IonButton>
+      </IonButtons>
+);
 
 const Explore = () => (
-      <IonContent>
+      <IonContent >
+            <TopBar title="Categories" buttons={topBarButtons} />
             <IonList>
                   {[
                         { id: 0, category: 'Optional packs', description: 'Additional content to boost your learning' },
