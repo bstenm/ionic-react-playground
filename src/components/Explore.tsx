@@ -16,7 +16,7 @@ const topBarButtons = (
 const Explore = () => (
       <IonContent >
             <TopBar title="Categories" buttons={topBarButtons} />
-            <IonList>
+            <IonList style={{ marginTop: "55px" }}>
                   {[
                         { id: 0, category: 'Optional packs', description: 'Additional content to boost your learning' },
                         { id: 1, category: 'Useful lists', description: 'Ex. Flash catds ordered by level' },

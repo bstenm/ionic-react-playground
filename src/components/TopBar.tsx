@@ -3,8 +3,14 @@ import React from 'react';
 import { withRouter } from 'react-router-dom';
 
 const TopBar = (props: any) => (
-      <IonHeader style={{ position: "fixed", top: "0px", textAlign: "center" }} >
-            <IonToolbar>
+      <IonHeader style={{
+            position: "fixed",
+            top: "0px",
+            textAlign: "center",
+      }} >
+            <IonToolbar style={{
+                  "--background": '#F66F24',
+            }} >
                   <IonIcon
                         style={{ cursor: "pointer" }}
                         slot="start"

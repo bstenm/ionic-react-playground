@@ -1,9 +1,9 @@
 
 .flip {
       width: 98%;
-      height: 80%;
+      height: 75%;
       position: relative;
-      margin: 2% auto;
+      margin: 75px auto;
   }
   .flip .card.flipped {
       -webkit-transform: rotatey(-180deg);

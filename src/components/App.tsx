@@ -9,7 +9,7 @@ const App = () => (
       <Router>
             <div id="app">
                   <IonApp>
-                        <IonPage  style={{ marginTop: '55px' }}>
+                        <IonPage  style={{ paddingTop: '55px' }}>
                               <Route exact path="/" render={() => <Redirect to="/home"/>}/>
                               <NavTabs />
                         </IonPage>

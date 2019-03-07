@@ -10,29 +10,29 @@ class LearnScreen extends React.Component {
             return (
                   <IonContent>
                         <TopBar title="Flash Cards" />
-                        <FlashCard flipped={this.state.cardFlipped} />
-                        <IonItemGroup class="learn-actions">
-                              {[
-                                    { color: 'red', name: 'again'},
-                                    { color: 'orange', name: 'difficult'},
-                                    { color: 'yellow', name: 'good'},
-                                    { color: 'green', name: 'perfect'},
-                              ].map( e => (
-                                    <IonButton
+                              <FlashCard flipped={this.state.cardFlipped} />
+                              <IonItemGroup class="learn-actions">
+                                    {[
+                                          { color: 'red', name: 'again'},
+                                          { color: 'orange', name: 'difficult'},
+                                          { color: 'yellow', name: 'good'},
+                                          { color: 'green', name: 'perfect'},
+                                    ].map( e => (
+                                          <IonButton
                                           key={e.name}
                                           onClick={() => {
                                                 this.setState({
-                                                      cardFlipped: !this.state.cardFlipped
-                                                });
-                                          }}
-                                          style={{"--border-radius": "0", "--background": e.color }}
-                                    >
-                                    {e.name}
-                              </IonButton>
-                              ))}
-                        </IonItemGroup>
+                                                            cardFlipped: !this.state.cardFlipped
+                                                      });
+                                                }}
+                                                style={{"--border-radius": "0", "--background": e.color }}
+                                                >
+                                          {e.name}
+                                    </IonButton>
+                                    ))}
+                              </IonItemGroup>
                   </IonContent>
-            )
+                  )
       }
 };
 

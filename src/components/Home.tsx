@@ -13,7 +13,7 @@ const topBarButtons = (
 const Home = () => (
       <IonContent>
             <TopBar title="French" buttons={topBarButtons} />
-            <div style={{ marginTop: "40px" }}>
+            <div style={{ marginTop: "70px" }}>
                   <IonImg src={frenchIcon} class="home-icon"/>
                   <p className="home-intro">
                         Congratulations, your learning path is now ready<br/>

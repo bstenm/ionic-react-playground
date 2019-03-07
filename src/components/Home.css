@@ -1,12 +1,13 @@
 .home-intro {
-  width: 400px;
+  width: 300px;
   margin: auto;
   margin-top: 40px;
-  padding: 30px;
+  padding: 20px;
   line-height: 1.4;
   text-align: center;
   background-color: #FFF;
   color: #555;
+  font-size: 15px;
 }
 .home-icon {
   width: 130px;

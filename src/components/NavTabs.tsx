@@ -6,9 +6,7 @@ import Home from './Home';
 import LearnScreen from './Learn';
 import NotFoundScreen from './NotFound';
 
-export default (props: any) => {
-      console.log(props);
-      return (
+export default () => (
       <IonTabs>
             <IonRouterOutlet>
                   <Route path="/:tab(explore)" component={ExploreScreen} exact={true} />
@@ -31,11 +29,18 @@ export default (props: any) => {
                               "transform": "rotate(90deg)",
                         }},
                   ].map( e => (
-                        <IonTabButton key={e.name} tab={e.name} href={`/${e.name}`}>
+                        <IonTabButton
+                              key={e.name}
+                              tab={e.name}
+                              href={`/${e.name}`}
+                              style={{
+                                    "--color-selected": '#F66F24',
+                              }}
+                        >
                               <IonIcon name={e.icon} style={e.style}/>
-                              <IonLabel>{e.name}</IonLabel>
+                              <IonLabel style={{ textTransform: "capitalize" }}>{e.name}</IonLabel>
                         </IonTabButton>
                   ))}
             </IonTabBar>
       </IonTabs>
-)};
+);
