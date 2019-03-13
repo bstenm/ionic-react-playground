@@ -1,6 +1,7 @@
 {
-  "appId": "io.react.ionic",
-  "appName": "react-ionic",
+  "appId": "com.react.ionic",
+  "appName": "ReactIonic",
   "bundledWebRuntime": false,
-  "webDir": "www"
+  "webDir": "build",
+  "linuxAndroidStudioPath": "/home/machin/android-studio/android-studio/bin/studio.sh"
 }

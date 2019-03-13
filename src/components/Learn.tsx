@@ -19,16 +19,16 @@ class LearnScreen extends React.Component {
                                           { color: 'green', name: 'perfect'},
                                     ].map( e => (
                                           <IonButton
-                                          key={e.name}
-                                          onClick={() => {
-                                                this.setState({
-                                                            cardFlipped: !this.state.cardFlipped
-                                                      });
-                                                }}
-                                                style={{"--border-radius": "0", "--background": e.color }}
+                                                key={e.name}
+                                                onClick={() => {
+                                                      this.setState({
+                                                                  cardFlipped: !this.state.cardFlipped
+                                                            });
+                                                      }}
+                                                      style={{"--border-radius": "0", "--background": e.color }}
                                                 >
-                                          {e.name}
-                                    </IonButton>
+                                                {e.name}
+                                          </IonButton>
                                     ))}
                               </IonItemGroup>
                   </IonContent>
